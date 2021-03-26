@@ -10,7 +10,7 @@ img {
   height: auto;
 }
 
-.navbar {
+nav .navbar {
   height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,14 +24,14 @@ img {
           justify-content: space-between;
 }
 
-.navbar img {
+nav .navbar img {
   margin-top: 10px;
   margin-left: 16px;
   width: 24px;
   height: 24px;
 }
 
-.navbar .hamburger {
+nav .navbar .hamburger {
   margin-top: 16px;
   margin-bottom: 16px;
   margin-right: 19px;
@@ -47,29 +47,41 @@ img {
           justify-content: space-between;
 }
 
-.navbar .hamburger span {
+nav .navbar .hamburger span {
   height: 2px;
   width: 18px;
   background-color: black;
 }
 
-.nav-links {
+nav input {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 8px;
+  right: 13px;
+}
+
+nav .nav-links {
   background-color: #0000ec;
 }
 
-.nav-links li {
+nav .nav-links li {
   list-style: none;
 }
 
-.nav-links li a {
+nav .nav-links li a {
   display: block;
   color: white;
   text-decoration: none;
   padding: 16px;
 }
 
-.nav-links li :hover {
+nav .nav-links li :hover {
   background-color: #00f3bb;
+}
+
+nav input:checked ~ .nav-links {
+  display: none;
 }
 
 @media (min-width: 800px) {
@@ -84,6 +96,9 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   nav .navbar {
     height: 80px;
@@ -98,6 +113,7 @@ img {
     height: 36px;
   }
   nav .nav-links {
+    margin-right: 84px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -11,53 +11,64 @@ img {
   height: auto;
 }
 
-.navbar {
-  height: 44px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  img {
-    margin-top: 10px;
-    margin-left: 16px;
-    width: 24px;
-    height: 24px;
-  }
-  .hamburger {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-right: 19px;
+nav {
+  .navbar {
+    height: 44px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    span {
-      height: 2px;
-      width: 18px;
-      background-color: black;
+    img {
+      margin-top: 10px;
+      margin-left: 16px;
+      width: 24px;
+      height: 24px;
+    }
+    .hamburger {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-right: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      span {
+        height: 2px;
+        width: 18px;
+        background-color: black;
+      }
     }
   }
-}
-
-.nav-links {
-  background-color: $primary-color;
-  li {
-    list-style: none;
-    a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 16px;
-    }
-    :hover {
-      background-color: $btn-secondary;
+  input {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: 8px;
+    right: 13px;
+  }
+  .nav-links {
+    background-color: $primary-color;
+    li {
+      list-style: none;
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 16px;
+      }
+      :hover {
+        background-color: $btn-secondary;
+      }
     }
   }
+  input:checked ~ .nav-links {
+    display: none;
+  }
 }
-
 @media (min-width: 800px) {
   nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     .navbar {
       height: 80px;
       .hamburger {
@@ -71,6 +82,7 @@ img {
       }
     }
     .nav-links {
+      margin-right: 84px;
       display: flex;
       background-color: white;
       li {
