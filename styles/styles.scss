@@ -43,9 +43,11 @@ nav {
     width: 26px;
     top: 8px;
     right: 13px;
+    opacity: 0;
   }
   .nav-links {
     background-color: $primary-color;
+    display: none;
     li {
       list-style: none;
       a {
@@ -59,8 +61,12 @@ nav {
       }
     }
   }
-  input:checked ~ .nav-links {
-    display: none;
+  // uso media query para resolver bug de cuando se expande checked
+  @media (max-width: 800px) {
+    input:checked ~ .nav-links {
+      display: block;
+      animation: nav-in 0.2s;
+    }
   }
 }
 @media (min-width: 800px) {
@@ -96,5 +102,14 @@ nav {
         }
       }
     }
+  }
+}
+
+@keyframes nav-in {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
   }
 }

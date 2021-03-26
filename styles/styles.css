@@ -59,10 +59,12 @@ nav input {
   width: 26px;
   top: 8px;
   right: 13px;
+  opacity: 0;
 }
 
 nav .nav-links {
   background-color: #0000ec;
+  display: none;
 }
 
 nav .nav-links li {
@@ -80,8 +82,12 @@ nav .nav-links li :hover {
   background-color: #00f3bb;
 }
 
-nav input:checked ~ .nav-links {
-  display: none;
+@media (max-width: 800px) {
+  nav input:checked ~ .nav-links {
+    display: block;
+    -webkit-animation: nav-in 0.2s;
+            animation: nav-in 0.2s;
+  }
 }
 
 @media (min-width: 800px) {
@@ -128,6 +134,28 @@ nav input:checked ~ .nav-links {
   }
   nav .nav-links li :hover {
     background-color: #00f3bb;
+  }
+}
+
+@-webkit-keyframes nav-in {
+  from {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes nav-in {
+  from {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=styles.css.map */
