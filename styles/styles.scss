@@ -166,9 +166,13 @@ p {
   text-align: center;
   line-height: 22px;
   background: $btn-secondary;
-  padding: 16px 59px;
+  padding: 13px;
+  width: 288px;
+  height: 48px;
 }
-:hover {
+.btn:hover {
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+  color: white;
 }
 
 .spoti {
