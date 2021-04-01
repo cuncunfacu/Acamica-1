@@ -277,28 +277,28 @@ p {
 }
 
 .guests div .g2 {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .guests div .g3 {
-  -webkit-transform: translateY(calc(-5px * 2));
-          transform: translateY(calc(-5px * 2));
+  -webkit-transform: translateY(calc(-6px * 2));
+          transform: translateY(calc(-6px * 2));
 }
 
 .guests div .g4 {
-  -webkit-transform: translateY(calc(-5px * 3));
-          transform: translateY(calc(-5px * 3));
+  -webkit-transform: translateY(calc(-6px * 3));
+          transform: translateY(calc(-6px * 3));
 }
 
 .guests div .g5 {
-  -webkit-transform: translateY(calc(-5px * 4));
-          transform: translateY(calc(-5px * 4));
+  -webkit-transform: translateY(calc(-6px * 4));
+          transform: translateY(calc(-6px * 4));
 }
 
 .guests div .g6 {
-  -webkit-transform: translateY(calc(-5px * 5));
-          transform: translateY(calc(-5px * 5));
+  -webkit-transform: translateY(calc(-6px * 5));
+          transform: translateY(calc(-6px * 5));
 }
 
 .nuestros-temas img {

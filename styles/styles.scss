@@ -229,19 +229,19 @@ p {
   div {
     position: relative;
     .g2 {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
     .g3 {
-      transform: translateY(calc(-5px * 2));
+      transform: translateY(calc(-6px * 2));
     }
     .g4 {
-      transform: translateY(calc(-5px * 3));
+      transform: translateY(calc(-6px * 3));
     }
     .g5 {
-      transform: translateY(calc(-5px * 4));
+      transform: translateY(calc(-6px * 4));
     }
     .g6 {
-      transform: translateY(calc(-5px * 5));
+      transform: translateY(calc(-6px * 5));
     }
   }
 }
