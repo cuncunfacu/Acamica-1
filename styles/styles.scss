@@ -1,6 +1,7 @@
 //imports
 
 @import "colors.scss";
+
 //imports
 // general
 * {
@@ -11,6 +12,11 @@
 a {
   text-decoration: none;
   cursor: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
 }
 
 img {
@@ -64,8 +70,6 @@ nav {
       list-style: none;
       a {
         display: block;
-        color: white;
-        text-decoration: none;
         padding: 16px;
       }
       :hover {
@@ -106,8 +110,7 @@ nav {
       background-color: white;
       li {
         a {
-          color: black;
-          text-decoration: none;
+          color: #060a24;
         }
         :hover {
           background-color: white;
@@ -135,6 +138,21 @@ h1 {
   span {
     text-decoration: line-through;
   }
+}
+h1,
+h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 22px;
 }
 
 .spoti {
