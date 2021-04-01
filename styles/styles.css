@@ -234,10 +234,10 @@ p {
   padding-top: 88px;
   height: 1203.5px;
   position: relative;
-  width: 100%;
 }
 
 .spoti h2 {
+  margin-top: 5%;
   margin-bottom: 21px;
   color: white;
 }
@@ -246,12 +246,11 @@ p {
   position: absolute;
   z-index: -1;
   content: "";
-  left: -57%;
-  top: 0;
+  top: 5%;
   height: 103%;
-  width: 500%;
-  -webkit-transform: rotate(353deg);
-          transform: rotate(353deg);
+  width: 100%;
+  -webkit-transform: skewY(353deg);
+          transform: skewY(353deg);
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
 }
 
