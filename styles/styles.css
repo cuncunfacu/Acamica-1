@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -133,8 +138,12 @@ nav .nav-links li :hover {
     color: black;
     text-decoration: none;
   }
+  nav .nav-links li :hover {
+    background-color: white;
+  }
   nav .nav-links :hover {
-    background-color: #00f3bb;
+    color: #00f3bb;
+    text-decoration: line-through;
   }
 }
 
@@ -158,5 +167,9 @@ nav .nav-links li :hover {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+h1 span {
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=styles.css.map */
