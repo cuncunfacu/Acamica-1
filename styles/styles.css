@@ -16,12 +16,17 @@ a {
 }
 
 img {
+  margin: 0;
   width: 100%;
   height: auto;
 }
 
 li {
   list-style: none;
+}
+
+nav {
+  margin-left: 0;
 }
 
 nav .navbar {
@@ -177,6 +182,7 @@ h1 span {
 
 h1,
 h2 {
+  margin-left: 16px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   letter-spacing: 0;
@@ -184,7 +190,18 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  margin-left: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  color: #060a24;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
 p {
+  margin-left: 16px;
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   color: #060a24;
@@ -193,6 +210,7 @@ p {
 }
 
 .btn {
+  margin-left: 16px;
   font-family: "IBM Plex Mono", monospace;
   display: inline-block;
   font-weight: 500;
@@ -213,18 +231,63 @@ p {
 }
 
 .spoti {
+  padding-top: 88px;
+  height: 1203.5px;
   position: relative;
+  width: 100%;
+}
+
+.spoti h2 {
+  margin-bottom: 21px;
+  color: white;
 }
 
 .spoti::before {
   position: absolute;
   z-index: -1;
   content: "";
-  top: 0%;
-  height: 148%;
-  width: 100%;
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
+  left: -57%;
+  top: 0;
+  height: 103%;
+  width: 500%;
+  -webkit-transform: rotate(353deg);
+          transform: rotate(353deg);
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+}
+
+.nuestros-temas img {
+  size: 104px;
+  width: unset;
+}
+
+.novedades {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 341px;
+  overflow: hidden;
+}
+
+.novedades::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 7.5vw;
+  height: 200%;
+  width: 500%;
+  -webkit-transform: rotate(353deg);
+          transform: rotate(353deg);
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
 }
 /*# sourceMappingURL=styles.css.map */
