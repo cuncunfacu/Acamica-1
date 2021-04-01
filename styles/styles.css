@@ -242,6 +242,12 @@ p {
   color: white;
 }
 
+.spoti .spotiframe {
+  -webkit-transform: scale(0.93, 1);
+          transform: scale(0.93, 1);
+  padding-bottom: 5px;
+}
+
 .spoti::before {
   position: absolute;
   z-index: -1;

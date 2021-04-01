@@ -199,6 +199,10 @@ p {
     margin-bottom: 21px;
     color: white;
   }
+  .spotiframe {
+    transform: scale(0.93, 1);
+    padding-bottom: 5px;
+  }
 }
 .spoti::before {
   position: absolute;
