@@ -10,6 +10,10 @@ img {
   height: auto;
 }
 
+li {
+  list-style: none;
+}
+
 nav .navbar {
   height: 44px;
   display: -webkit-box;
@@ -125,14 +129,11 @@ nav .nav-links li :hover {
     display: flex;
     background-color: white;
   }
-  nav .nav-links li {
-    list-style: none;
-  }
   nav .nav-links li a {
     color: black;
     text-decoration: none;
   }
-  nav .nav-links li :hover {
+  nav .nav-links :hover {
     background-color: #00f3bb;
   }
 }

@@ -11,6 +11,9 @@ img {
   height: auto;
 }
 
+li {
+  list-style: none;
+}
 nav {
   .navbar {
     height: 44px;
@@ -61,7 +64,7 @@ nav {
       }
     }
   }
-  // uso media query para resolver bug de cuando se expande checked
+  // uso media query para resolver bug de cuando se agranda la pantalla y vuelve a contraer queda en estado checked.
   @media (max-width: 800px) {
     input:checked ~ .nav-links {
       display: block;
@@ -69,6 +72,7 @@ nav {
     }
   }
 }
+
 @media (min-width: 800px) {
   nav {
     display: flex;
@@ -91,15 +95,12 @@ nav {
       margin-right: 84px;
       display: flex;
       background-color: white;
-      li {
-        list-style: none;
-        a {
-          color: black;
-          text-decoration: none;
-        }
-        :hover {
-          background-color: $btn-secondary;
-        }
+      li a {
+        color: black;
+        text-decoration: none;
+      }
+      :hover {
+        background-color: $btn-secondary;
       }
     }
   }
