@@ -9,10 +9,12 @@ $guest-image-translate-y: 5px;
 
 //Variables
 // general
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 * {
   padding: 0;
@@ -33,6 +35,7 @@ img {
   margin: 0;
   width: 100%;
   height: auto;
+  align-self: center;
 }
 
 li {
@@ -40,6 +43,10 @@ li {
 }
 // general
 // Nav - bar
+header {
+  display: flex;
+  flex-direction: column;
+}
 nav {
   margin-left: 0;
   .navbar {
@@ -182,6 +189,7 @@ p {
 }
 
 .btn {
+  align-self: center;
   font-family: "IBM Plex Mono", monospace;
   display: inline-block;
   font-weight: 500;
@@ -243,6 +251,12 @@ p {
     .g6 {
       transform: translateY(calc(-6px * 5));
     }
+    @media (min-width: 800px) {
+      .g1, .g2, .g3, .g4, .g5, .g6 {
+        transform: none;
+        width: 500px;
+      }
+    }
   }
 }
 
@@ -250,6 +264,10 @@ p {
   img {
     size: 104px;
     width: unset;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
   }
 }
 
