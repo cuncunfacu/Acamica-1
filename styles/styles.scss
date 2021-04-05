@@ -236,24 +236,26 @@ p {
 .guests {
   // hay que mover las imagenes para que no haya espacio multiplicado por 2*n
   div {
-    position: relative;
-    .g2 {
-      transform: translateY(-6px);
-    }
-    .g3 {
-      transform: translateY(calc(-6px * 2));
-    }
-    .g4 {
-      transform: translateY(calc(-6px * 3));
-    }
-    .g5 {
-      transform: translateY(calc(-6px * 4));
-    }
-    .g6 {
-      transform: translateY(calc(-6px * 5));
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      // .g2 {
+      //   transform: translateY(-6px);
+      // }
+      // .g3 {
+      //   transform: translateY(calc(-6px * 2));
+      // }
+      // .g4 {
+      //   transform: translateY(calc(-6px * 3));
+      // }
+      // .g5 {
+      //   transform: translateY(calc(-6px * 4));
+      // }
+      // .g6 {
+      //   transform: translateY(calc(-6px * 5));
+      // }
   }
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     div {
       position: static;
       display: flex;
@@ -262,7 +264,7 @@ p {
     justify-content: center;
     .g1, .g2, .g3, .g4, .g5, .g6 {
       transform: none;
-      width: 480px;
+      width: 33.333vw;
     }
   }
   }
