@@ -33,6 +33,7 @@ a {
 
 img {
   margin: 0;
+  padding: 0;
   width: 100%;
   height: auto;
   align-self: center;
@@ -251,12 +252,19 @@ p {
     .g6 {
       transform: translateY(calc(-6px * 5));
     }
-    @media (min-width: 800px) {
-      .g1, .g2, .g3, .g4, .g5, .g6 {
-        transform: none;
-        width: 500px;
-      }
+  }
+  @media (min-width: 800px) {
+    div {
+      position: static;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    justify-content: center;
+    .g1, .g2, .g3, .g4, .g5, .g6 {
+      transform: none;
+      width: 480px;
     }
+  }
   }
 }
 
