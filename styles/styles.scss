@@ -255,7 +255,7 @@ p {
       //   transform: translateY(calc(-6px * 5));
       // }
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 640px) {
     div {
       position: static;
       display: flex;
@@ -264,7 +264,10 @@ p {
     justify-content: center;
     .g1, .g2, .g3, .g4, .g5, .g6 {
       transform: none;
-      width: 33.333vw;
+      width: 50vw;
+      @media (min-width: 960px) {
+        width: 33.333vw;
+      }
     }
   }
   }
