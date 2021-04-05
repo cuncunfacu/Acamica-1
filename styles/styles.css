@@ -319,6 +319,7 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100vw;
   }
   .guests div .g1, .guests div .g2, .guests div .g3, .guests div .g4, .guests div .g5, .guests div .g6 {
     -webkit-transform: none;
