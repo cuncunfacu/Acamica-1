@@ -22,6 +22,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
 }
 
@@ -163,6 +166,7 @@ nav .nav-links li :hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 120px;
   }
   nav .navbar {
     height: 80px;
@@ -226,8 +230,10 @@ h1 .crossed {
   text-decoration: line-through;
 }
 
-h1 .dot {
-  color: blue;
+@media (min-width: 600px) {
+  h1 .dot {
+    color: blue;
+  }
 }
 
 h1,
@@ -235,7 +241,7 @@ h2 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 90vw;
+  width: 72vw;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   letter-spacing: 0;
@@ -257,7 +263,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 90vw;
+  width: 72vw;
   margin-bottom: 36px;
   padding: 0;
   font-family: "IBM Plex Mono", monospace;
@@ -291,13 +297,12 @@ p {
 }
 
 .spoti {
-  padding-top: 88px;
   height: 1203.5px;
   position: relative;
 }
 
 .spoti h2 {
-  margin-top: 5%;
+  margin-top: calc(100px + 1vw);
   margin-bottom: 21px;
   color: white;
 }
@@ -320,6 +325,9 @@ p {
 @media (min-width: 640px) {
   .spoti .spotiframes .spotiframe {
     width: 584px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -327,6 +335,11 @@ p {
   .spoti .spotiframes .spotiframe {
     margin-bottom: calc(25vw - 302px);
   }
+}
+
+.our-origins .phone-img {
+  width: 457.6px;
+  height: 660px;
 }
 
 .spoti::before {
@@ -422,6 +435,17 @@ p {
 
 .novedades .btn {
   margin-bottom: 67px;
+}
+
+@media (min-width: 800px) {
+  .novedades {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .novedades::before {
