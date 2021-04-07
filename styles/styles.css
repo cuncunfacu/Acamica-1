@@ -19,6 +19,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -219,6 +222,10 @@ h1 {
   margin-bottom: 16px;
 }
 
+h1 .crossed {
+  text-decoration: line-through;
+}
+
 h1 .dot {
   color: blue;
 }
@@ -243,6 +250,7 @@ h3 {
   letter-spacing: 0;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 65px;
 }
 
 p {
@@ -295,9 +303,14 @@ p {
 }
 
 .spoti .spotiframe {
+  width: 100vw;
   -webkit-transform: scale(0.93, 1);
           transform: scale(0.93, 1);
   padding-bottom: 5px;
+}
+
+.spoti .spotiframe iframe {
+  width: 100%;
 }
 
 .spoti::before {
@@ -355,7 +368,13 @@ p {
   }
 }
 
+.nuestros-temas h2 {
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
 .nuestros-temas img {
+  margin-bottom: 13px;
   size: 104px;
   width: unset;
 }
@@ -371,29 +390,22 @@ p {
 }
 
 .novedades {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 341px;
   overflow: hidden;
 }
 
 .novedades h2 {
-  margin-top: 5%;
   text-align: center;
   color: white;
   margin-bottom: 36px;
+}
+
+.novedades .btn {
+  margin-bottom: 67px;
 }
 
 .novedades::before {
