@@ -219,8 +219,8 @@ h1 {
   margin-bottom: 16px;
 }
 
-h1 span {
-  text-decoration: line-through;
+h1 .dot {
+  color: blue;
 }
 
 h1,
