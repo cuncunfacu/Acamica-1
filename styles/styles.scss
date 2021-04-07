@@ -229,12 +229,20 @@ p {
     margin-bottom: 21px;
     color: white;
   }
-  .spotiframe {
-    width: 100vw;
-    transform: scale(0.93, 1);
-    padding-bottom: 5px;
-    iframe {
-      width: 100%;
+  .spotiframes {
+    justify-content: space-evenly;
+    .spotiframe {
+      width: 93vw;
+      padding-bottom: 5px;
+      iframe {
+        width: 100%;
+      }
+      @media (min-width: 640px){
+        width: 584px;
+        @media (min-width: 1200px){
+          margin-bottom: calc(25vw - 302px);
+        }
+      }
     }
   }
 }

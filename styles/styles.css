@@ -302,15 +302,31 @@ p {
   color: white;
 }
 
-.spoti .spotiframe {
-  width: 100vw;
-  -webkit-transform: scale(0.93, 1);
-          transform: scale(0.93, 1);
+.spoti .spotiframes {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.spoti .spotiframes .spotiframe {
+  width: 93vw;
   padding-bottom: 5px;
 }
 
-.spoti .spotiframe iframe {
+.spoti .spotiframes .spotiframe iframe {
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .spoti .spotiframes .spotiframe {
+    width: 584px;
+  }
+}
+
+@media (min-width: 640px) and (min-width: 1200px) {
+  .spoti .spotiframes .spotiframe {
+    margin-bottom: calc(25vw - 302px);
+  }
 }
 
 .spoti::before {
