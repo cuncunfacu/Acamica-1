@@ -296,6 +296,14 @@ p {
   position: relative;
 }
 
+@media (min-width: 800px) {
+  .spoti {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .spoti h2 {
   margin-top: 5%;
   margin-bottom: 21px;
@@ -333,6 +341,13 @@ p {
   .spoti .spotiframes .spotiframe {
     width: 584px;
     margin-bottom: calc(25vw - 302px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .spoti .spotiframes .spotiframe {
+    width: 37vw;
+    margin-bottom: calc(89px);
   }
 }
 
@@ -402,7 +417,7 @@ p {
   width: unset;
 }
 
-.nuestros-temas div {
+.nuestros-temas .topics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,6 +425,20 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .nuestros-temas .topics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nuestros-temas .topics .topic {
+    width: 260px;
+  }
 }
 
 .novedades {
@@ -438,6 +467,10 @@ p {
             justify-content: center;
     -ms-flex-line-pack: end;
         align-content: flex-end;
+    height: 518px;
+  }
+  .novedades .btn {
+    margin-bottom: 151px;
   }
 }
 
@@ -460,6 +493,7 @@ footer p {
 }
 
 footer .socials {
+  width: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,15 +502,18 @@ footer .socials {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 16px 45px 31px 45px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 800px) {
-  footer {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  .footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
 }
 /*# sourceMappingURL=styles.css.map */

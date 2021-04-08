@@ -224,6 +224,9 @@ p {
   padding-top: 88px;
   height: 1203.5px;
   position: relative;
+  @media (min-width: 800px) {    
+    align-items: flex-start;
+  }
   h2 {
     margin-top: 5%;
     margin-bottom: 21px;
@@ -246,6 +249,10 @@ p {
       @media (min-width: 1200px){
         width: 584px;
         margin-bottom: calc(25vw - 302px);
+      }
+      @media (min-width: 1600px){
+        width: 37vw;
+        margin-bottom: calc(89px);
       }
     }
   }
@@ -295,10 +302,18 @@ p {
     margin-bottom: 13px;
     size: 104px;
     width: unset;
+
   }
-  div {
+  .topics {
     display: flex;
     flex-direction: column;
+    @media (min-width: 800px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+        .topic {
+          width: 260px;
+      }
+    }
   }
 }
 
@@ -318,7 +333,10 @@ p {
   @media (min-width: 800px) {
     justify-content: center;
     align-content: flex-end;
-    
+    height: 518px;
+    .btn {
+      margin-bottom: 151px;
+    }
   }
 }
 .novedades::before {
@@ -339,12 +357,17 @@ footer {
     width: auto;
   }
   .socials {
+    width: 15vw;
     display: flex;
     flex-direction: row;
     margin: 16px 45px 31px 45px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  @media (min-width: 800px) {
-    justify-content: space-evenly;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    justify-content: space-around;
+    align-items: unset;
   }
 }
