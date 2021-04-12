@@ -546,14 +546,14 @@ h1 .crossed {
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
 }
 
-footer p {
+.tfooter p {
   text-align: center;
   margin-top: 24px;
   width: auto;
 }
 
-footer .socials {
-  width: 15vw;
+.tfooter .socials {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,18 +562,17 @@ footer .socials {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 16px 45px 31px 45px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (min-width: 800px) {
-  .footer {
+  .tfooter {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
+  }
+  .tfooter .socials {
+    width: 15vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */

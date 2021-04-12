@@ -1,21 +1,23 @@
-footer {
+.tfooter {
     p {
       text-align: center;
       margin-top: 24px;
       width: auto;
     }
     .socials {
-      width: 15vw;
+      width: 100%;
       display: flex;
       flex-direction: row;
       margin: 16px 45px 31px 45px;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
   
   @media (min-width: $screen-m) {
-    .footer {
+    .tfooter {
       justify-content: space-around;
-      align-items: unset;
+      .socials {
+        width: 15vw;
+      }
     }
   }
