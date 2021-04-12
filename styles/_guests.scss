@@ -1,0 +1,25 @@
+.guests {
+    // hay que mover las imagenes para que no haya espacio multiplicado por 2*n
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (min-width: 640px) {
+      div {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      justify-content: center;
+      width: 100vw;
+      .g1, .g2, .g3, .g4, .g5, .g6 {
+        transform: none;
+        width: 50vw;
+        @media (min-width: 960px) {
+          width: 33.333vw;
+        }
+      }
+    }
+    }
+  }

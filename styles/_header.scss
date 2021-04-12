@@ -1,0 +1,118 @@
+nav {
+    margin-left: 0;
+    .navbar {
+      height: 44px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      img {
+        margin-top: 10px;
+        margin-left: 16px;
+        width: 24px;
+        height: 24px;
+      }
+      .hamburger {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+          height: 2px;
+          width: 18px;
+          background-color: black;
+        }
+      }
+    }
+    input {
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      top: 8px;
+      right: 13px;
+      opacity: 0;
+    }
+    .nav-links {
+      background-color: $primary-color;
+      display: none;
+      li {
+        list-style: none;
+        a {
+          display: block;
+          padding: 16px;
+        }
+        :hover {
+          background-color: $btn-secondary;
+        }
+      }
+    }
+    // uso media query para resolver bug de cuando se agranda la pantalla y vuelve a contraer queda en estado checked.
+    @media (max-width: 800px) {
+      input:checked ~ .nav-links {
+        display: block;
+        animation: nav-in 0.2s;
+      }
+    }
+  }
+
+  
+  
+  @media (min-width: 800px) {
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .navbar {
+        height: 80px;
+        .hamburger {
+          display: none;
+        }
+        img {
+          margin-top: 22px;
+          margin-left: 100px;
+          width: 36px;
+          height: 36px;
+        }
+      }
+      .nav-links {
+        margin-right: 84px;
+        display: flex;
+        background-color: white;
+        li {
+          a {
+            color: #060a24;
+          }
+          :hover {
+            background-color: white;
+          }
+        }
+        :hover {
+          color: $btn-secondary;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+  
+  @keyframes nav-in {
+    from {
+      transform: translateX(-500px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+  h1 {
+    padding: 0;
+    margin-bottom: 16px;
+    .crossed {
+      text-decoration: line-through;
+    }
+    .dot {
+      color: blue;
+    }
+  }

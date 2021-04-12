@@ -1,0 +1,32 @@
+.news {
+    justify-content: flex-end;
+    position: relative;
+    height: 341px;
+    overflow: hidden;
+    h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 36px;
+    }
+    .btn {
+      margin-bottom: 67px;
+    }
+    @media (min-width: 800px) {
+      justify-content: center;
+      align-content: flex-end;
+      height: 518px;
+      .btn {
+        margin-bottom: 151px;
+      }
+    }
+  }
+  .news::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 7.5vw;
+    height: 200%;
+    width: 500%;
+    transform: skewY(353deg);
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  }
