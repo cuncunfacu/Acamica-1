@@ -23,14 +23,16 @@ nav {
           width: 18px;
           background-color: black;
         }
+        }
+        
       }
     }
     input {
       position: absolute;
-      height: 26px;
-      width: 26px;
-      top: 8px;
-      right: 13px;
+      height: 80px;
+      width: 100px;
+      top: 0px;
+      right: 0px;
       opacity: 0;
     }
     .nav-links {
@@ -52,9 +54,21 @@ nav {
       input:checked ~ .nav-links {
         display: block;
         animation: nav-in 0.2s;
-      }
     }
+      input:checked ~ .navbar .hamburger{
+        transform: translateX(5px);
+        #one {display: none;}
+        #two {
+          transform: rotate(45deg) translate(0, 7px);;
+        }
+        #three {
+          transform: rotate(-45deg) translate(0, -7px);
+        }
+        
+      }
   }
+  
+  
 
   
   
@@ -112,9 +126,22 @@ nav {
     .crossed {
       text-decoration: line-through;
     }
-    @media (min-width: $screen-m){
-      .dot {
-        color: blue;
-      }
+  }
+header {
+
+
+  @media (min-width: $screen-m){
+    h1, p {
+      width: 50%;
+      align-self: flex-start;
+      margin-left: 13vw;
+    }
+    .dot {
+      color: blue;
+    }
+    .btn {
+      align-self: flex-start;
+      margin-left: 13vw;
     }
   }
+}

@@ -159,38 +159,53 @@ nav .navbar .hamburger span {
   background-color: black;
 }
 
-nav input {
+input {
   position: absolute;
-  height: 26px;
-  width: 26px;
-  top: 8px;
-  right: 13px;
+  height: 80px;
+  width: 100px;
+  top: 0px;
+  right: 0px;
   opacity: 0;
 }
 
-nav .nav-links {
+.nav-links {
   background-color: #0000ec;
   display: none;
 }
 
-nav .nav-links li {
+.nav-links li {
   list-style: none;
 }
 
-nav .nav-links li a {
+.nav-links li a {
   display: block;
   padding: 16px;
 }
 
-nav .nav-links li :hover {
+.nav-links li :hover {
   background-color: #00f3bb;
 }
 
 @media (max-width: 800px) {
-  nav input:checked ~ .nav-links {
+  input:checked ~ .nav-links {
     display: block;
     -webkit-animation: nav-in 0.2s;
             animation: nav-in 0.2s;
+  }
+  input:checked ~ .navbar .hamburger {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  input:checked ~ .navbar .hamburger #one {
+    display: none;
+  }
+  input:checked ~ .navbar .hamburger #two {
+    -webkit-transform: rotate(45deg) translate(0, 7px);
+            transform: rotate(45deg) translate(0, 7px);
+  }
+  input:checked ~ .navbar .hamburger #three {
+    -webkit-transform: rotate(-45deg) translate(0, -7px);
+            transform: rotate(-45deg) translate(0, -7px);
   }
 }
 
@@ -273,8 +288,19 @@ h1 .crossed {
 }
 
 @media (min-width: 800px) {
-  h1 .dot {
+  header h1, header p {
+    width: 50%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 13vw;
+  }
+  header .dot {
     color: blue;
+  }
+  header .btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 13vw;
   }
 }
 
