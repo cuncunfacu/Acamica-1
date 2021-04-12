@@ -373,7 +373,7 @@ h1 .crossed {
   }
 }
 
-@media (min-width: 1200) {
+@media (min-width: 1200px) {
   .spoti .spotiframes .spotiframe {
     width: 584px;
     margin-bottom: calc(25vw - 302px);
