@@ -66,6 +66,43 @@ header {
           flex-direction: column;
 }
 
+h1,
+h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90vw;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  color: #060a24;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 65px;
+}
+
+p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90vw;
+  margin-bottom: 36px;
+  padding: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
 nav {
   margin-left: 0;
 }
@@ -230,43 +267,6 @@ h1 .dot {
   color: blue;
 }
 
-h1,
-h2 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 90vw;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: 42px;
-  font-weight: normal;
-}
-
-h3 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 24px;
-  color: #060a24;
-  letter-spacing: 0;
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 65px;
-}
-
-p {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 90vw;
-  margin-bottom: 36px;
-  padding: 0;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  color: #060a24;
-  letter-spacing: 0;
-  line-height: 22px;
-}
-
 .btn {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -406,18 +406,18 @@ p {
   }
 }
 
-.nuestros-temas h2 {
+.our-topics h2 {
   margin-top: 48px;
   margin-bottom: 24px;
 }
 
-.nuestros-temas img {
+.our-topics img {
   margin-bottom: 13px;
   size: 104px;
   width: unset;
 }
 
-.nuestros-temas .topics {
+.our-topics .topics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +428,7 @@ p {
 }
 
 @media (min-width: 800px) {
-  .nuestros-temas .topics {
+  .our-topics .topics {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -436,12 +436,12 @@ p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .nuestros-temas .topics .topic {
+  .our-topics .topics .topic {
     width: 260px;
   }
 }
 
-.novedades {
+.news {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -450,18 +450,18 @@ p {
   overflow: hidden;
 }
 
-.novedades h2 {
+.news h2 {
   text-align: center;
   color: white;
   margin-bottom: 36px;
 }
 
-.novedades .btn {
+.news .btn {
   margin-bottom: 67px;
 }
 
 @media (min-width: 800px) {
-  .novedades {
+  .news {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -469,12 +469,12 @@ p {
         align-content: flex-end;
     height: 518px;
   }
-  .novedades .btn {
+  .news .btn {
     margin-bottom: 151px;
   }
 }
 
-.novedades::before {
+.news::before {
   position: absolute;
   z-index: -1;
   content: "";
