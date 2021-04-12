@@ -1,8 +1,8 @@
 .spoti {
     padding-top: 88px;
-    height: 1203.5px;
+    // height: 1203.5px;
     position: relative;
-    @media (min-width: 800px) {    
+    @media (min-width: $screen-m) {    
       align-items: flex-start;
     }
     h2 {
@@ -18,17 +18,17 @@
         iframe {
           width: 100%;
         }
-        @media (min-width: 400px){
+        @media (min-width: $screen-sm){
           width: 372px;
         }
-        @media (min-width: 800px) {
+        @media (min-width: $screen-m) {
           width: 49vw;
         }
-        @media (min-width: 1200px){
+        @media (min-width: $screen-l){
           width: 584px;
           margin-bottom: calc(25vw - 302px);
         }
-        @media (min-width: 1600px){
+        @media (min-width: $screen-l-2){
           width: 37vw;
           margin-bottom: calc(89px);
         }
@@ -44,4 +44,9 @@
     width: 100%;
     transform: skewY(353deg);
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  }
+  @media (min-width: $screen-m) {
+    .spoti::before {
+      top: 9%
+    }
   }

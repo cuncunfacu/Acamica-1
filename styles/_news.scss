@@ -11,7 +11,7 @@
     .btn {
       margin-bottom: 67px;
     }
-    @media (min-width: 800px) {
+    @media (min-width: $screen-m) {
       justify-content: center;
       align-content: flex-end;
       height: 518px;

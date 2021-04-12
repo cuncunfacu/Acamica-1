@@ -48,7 +48,7 @@ nav {
       }
     }
     // uso media query para resolver bug de cuando se agranda la pantalla y vuelve a contraer queda en estado checked.
-    @media (max-width: 800px) {
+    @media (max-width: $screen-m) {
       input:checked ~ .nav-links {
         display: block;
         animation: nav-in 0.2s;
@@ -58,7 +58,7 @@ nav {
 
   
   
-  @media (min-width: 800px) {
+  @media (min-width: $screen-m) {
     nav {
       display: flex;
       flex-direction: row;
@@ -112,7 +112,9 @@ nav {
     .crossed {
       text-decoration: line-through;
     }
-    .dot {
-      color: blue;
+    @media (min-width: $screen-m){
+      .dot {
+        color: blue;
+      }
     }
   }

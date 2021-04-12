@@ -1,0 +1,29 @@
+.our-origins {
+    img {
+        max-height: 600px;
+        object-fit: contain;
+    }
+    @media (min-width: $screen-m-2) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .phone {
+            width: 50%;
+        }
+        .origins-text {
+            width: 45%;
+            margin-top: 110px;
+            p {
+                align-self: auto;
+                width: 464px;
+                margin-bottom: auto;
+            }
+            h2 {
+                align-self: auto;
+                width: 464px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

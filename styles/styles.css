@@ -103,6 +103,15 @@ p {
   line-height: 22px;
 }
 
+@media (min-width: 800px) {
+  p {
+    font-size: 16px;
+  }
+  h1, h2 {
+    font-size: 36px;
+  }
+}
+
 nav {
   margin-left: 0;
 }
@@ -263,8 +272,10 @@ h1 .crossed {
   text-decoration: line-through;
 }
 
-h1 .dot {
-  color: blue;
+@media (min-width: 800px) {
+  h1 .dot {
+    color: blue;
+  }
 }
 
 .btn {
@@ -292,7 +303,6 @@ h1 .dot {
 
 .spoti {
   padding-top: 88px;
-  height: 1203.5px;
   position: relative;
 }
 
@@ -337,7 +347,7 @@ h1 .dot {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200) {
   .spoti .spotiframes .spotiframe {
     width: 584px;
     margin-bottom: calc(25vw - 302px);
@@ -361,6 +371,12 @@ h1 .dot {
   -webkit-transform: skewY(353deg);
           transform: skewY(353deg);
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+}
+
+@media (min-width: 800px) {
+  .spoti::before {
+    top: 9%;
+  }
 }
 
 .guests div {
@@ -393,7 +409,7 @@ h1 .dot {
             justify-content: center;
     width: 100vw;
   }
-  .guests div .g1, .guests div .g2, .guests div .g3, .guests div .g4, .guests div .g5, .guests div .g6 {
+  .guests div img {
     -webkit-transform: none;
             transform: none;
     width: 50vw;
@@ -401,7 +417,7 @@ h1 .dot {
 }
 
 @media (min-width: 640px) and (min-width: 960px) {
-  .guests div .g1, .guests div .g2, .guests div .g3, .guests div .g4, .guests div .g5, .guests div .g6 {
+  .guests div img {
     width: 33.333vw;
   }
 }
@@ -438,6 +454,50 @@ h1 .dot {
   }
   .our-topics .topics .topic {
     width: 260px;
+  }
+}
+
+.our-origins img {
+  max-height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 960px) {
+  .our-origins {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .our-origins .phone {
+    width: 50%;
+  }
+  .our-origins .origins-text {
+    width: 45%;
+    margin-top: 110px;
+  }
+  .our-origins .origins-text p {
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    width: 464px;
+    margin-bottom: auto;
+  }
+  .our-origins .origins-text h2 {
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    width: 464px;
+    margin-bottom: 20px;
   }
 }
 
