@@ -106,6 +106,10 @@ nav {
           color: $btn-secondary;
           text-decoration: line-through;
         }
+        :active {
+          color: #060A24 56%;
+          text-decoration: line-through;
+        }
       }
     }
   }

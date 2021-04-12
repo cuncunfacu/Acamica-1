@@ -254,6 +254,10 @@ input {
     color: #00f3bb;
     text-decoration: line-through;
   }
+  nav .nav-links :active {
+    color: #060A24 56%;
+    text-decoration: line-through;
+  }
 }
 
 @-webkit-keyframes nav-in {
