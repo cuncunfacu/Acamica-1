@@ -604,5 +604,8 @@ h1 .crossed {
   .tfooter .socials {
     width: 15vw;
   }
+  .tfooter .socials .icon {
+    color: black;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
