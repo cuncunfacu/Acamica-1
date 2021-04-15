@@ -34,7 +34,6 @@
 
 a {
   text-decoration: none;
-  cursor: none;
   font-family: "IBM Plex Mono", monospace;
   color: white;
   font-size: 16px;
@@ -107,7 +106,8 @@ p {
   p {
     font-size: 16px;
   }
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 36px;
   }
 }
@@ -328,7 +328,6 @@ h1 .crossed {
 
 .btn:hover {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-  cursor: default;
   color: white;
 }
 
