@@ -596,6 +596,10 @@ h1 .crossed {
       justify-content: space-around;
 }
 
+.tfooter .socials .icon {
+  color: black;
+}
+
 @media (min-width: 800px) {
   .tfooter {
     -ms-flex-pack: distribute;
@@ -603,9 +607,6 @@ h1 .crossed {
   }
   .tfooter .socials {
     width: 15vw;
-  }
-  .tfooter .socials .icon {
-    color: black;
   }
 }
 /*# sourceMappingURL=styles.css.map */

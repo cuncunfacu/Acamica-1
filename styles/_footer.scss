@@ -1,27 +1,26 @@
 .tfooter {
-    p {
-      text-align: center;
-      margin-top: 24px;
-      width: auto;
-    }
-    .socials {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      margin: 16px 45px 31px 45px;
-      justify-content: space-around;
+  p {
+    text-align: center;
+    margin-top: 24px;
+    width: auto;
+  }
+  .socials {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 16px 45px 31px 45px;
+    justify-content: space-around;
+    .icon {
+      color: black;
     }
   }
-  
-  @media (min-width: $screen-m) {
-    .tfooter {
-      justify-content: space-around;
-      .socials {
-          width: 15vw;
-          .icon {
-            color: black;
-          }
+}
 
-      }
+@media (min-width: $screen-m) {
+  .tfooter {
+    justify-content: space-around;
+    .socials {
+      width: 15vw;
     }
   }
+}
