@@ -363,6 +363,7 @@ h1 .crossed {
 
 .spoti .spotiframes .spotiframe iframe {
   width: 100%;
+  border: none;
 }
 
 @media (min-width: 400px) {
